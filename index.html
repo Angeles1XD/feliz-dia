@@ -14,11 +14,15 @@
       background-repeat: no-repeat;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       color: #000;
-      text-align: center;
-      padding-top: 150px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      flex-direction: column;
+      text-align: right;
+      padding: 150px 50px 100px;
       min-height: 100vh;
+      box-sizing: border-box;
       position: relative;
-      overflow: hidden;
     }
 
     h1 {
@@ -36,23 +40,15 @@
     p {
       font-size: 1.4rem;
       max-width: 700px;
-      margin: 0 auto 2rem;
       line-height: 1.5;
-    }
-
-    .credit {
-      position: absolute;
-      bottom: 10px;
-      width: 100%;
-      font-size: 0.9rem;
-      opacity: 0.8;
+      margin-bottom: 2rem;
     }
 
     .gif-container {
-      margin: 40px auto 0;
       width: 280px;
       height: 200px;
       overflow: hidden;
+      margin-bottom: 2rem;
       mask-image: radial-gradient(ellipse at center, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
       -webkit-mask-image: radial-gradient(ellipse at center, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
       mask-size: 100% 100%;
@@ -64,6 +60,12 @@
       height: 100%;
       object-fit: cover;
     }
+
+    .credit {
+      font-size: 0.9rem;
+      opacity: 0.8;
+      align-self: flex-end;
+    }
   </style>
 </head>
 <body>
@@ -71,7 +73,7 @@
   <p>Un padre es maestro, amigo y consejero todo en la misma persona.<br>
   No le podemos pedir nada más, tan solo darle a cambio todo nuestro cariño.</p>
 
-  <!-- GIF centrado debajo del texto -->
+  <!-- GIF alineado a la derecha -->
   <div class="gif-container">
     <img src="https://i.pinimg.com/originals/61/f6/72/61f672f64c65e8838d7acbaf3aad1762.gif" alt="Goku en la nube voladora" />
   </div>
