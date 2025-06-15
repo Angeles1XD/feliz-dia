@@ -15,19 +15,21 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       color: #000;
       display: flex;
-      justify-content: flex-end;
-      align-items: center;
       flex-direction: column;
+      align-items: flex-end; /* pega al borde derecho */
       text-align: right;
-      padding: 150px 50px 100px;
+      padding-top: 150px;
+      padding-right: 0px; /* sin separación */
+      padding-left: 0px;
+      padding-bottom: 50px;
       min-height: 100vh;
       box-sizing: border-box;
-      position: relative;
     }
 
     h1 {
       font-size: 3.5rem;
-      margin-bottom: 1rem;
+      margin: 0 0 1rem 0;
+      padding-right: 10px;
       animation: float 3s ease-in-out infinite;
     }
 
@@ -41,14 +43,14 @@
       font-size: 1.4rem;
       max-width: 700px;
       line-height: 1.5;
-      margin-bottom: 2rem;
+      margin: 0 10px 2rem 0;
     }
 
     .gif-container {
       width: 280px;
       height: 200px;
       overflow: hidden;
-      margin-bottom: 2rem;
+      margin: 0 10px 2rem 0;
       mask-image: radial-gradient(ellipse at center, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
       -webkit-mask-image: radial-gradient(ellipse at center, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
       mask-size: 100% 100%;
@@ -64,7 +66,7 @@
     .credit {
       font-size: 0.9rem;
       opacity: 0.8;
-      align-self: flex-end;
+      margin-right: 10px;
     }
   </style>
 </head>
@@ -73,12 +75,12 @@
   <p>Un padre es maestro, amigo y consejero todo en la misma persona.<br>
   No le podemos pedir nada más, tan solo darle a cambio todo nuestro cariño.</p>
 
-  <!-- GIF alineado a la derecha -->
+  <!-- GIF alineado al borde derecho -->
   <div class="gif-container">
     <img src="https://i.pinimg.com/originals/61/f6/72/61f672f64c65e8838d7acbaf3aad1762.gif" alt="Goku en la nube voladora" />
   </div>
 
-  <!-- Dedicatoria -->
+  <!-- Dedicatoria alineada -->
   <div class="credit">Con mucho cariño ❤️</div>
 </body>
 </html>
