@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Feliz Día del Padre</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('https://t4.ftcdn.net/jpg/03/47/04/03/360_F_347040389_m0SZJmgaXeXczfpx8FCoKKHrpatDrjET.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #000;
+      text-align: center;
+      padding-top: 60px;
+      min-height: 100vh;
+      position: relative;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+      100% { transform: translateY(0); }
+    }
+
+    p {
+      font-size: 1.4rem;
+      max-width: 700px;
+      margin: 0 auto 2rem;
+      line-height: 1.5;
+    }
+
+    .credit {
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+
+    .gif-container {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      width: 200px;
+      height: 150px;
+      overflow: hidden;
+      z-index: 9999;
+      pointer-events: none;
+      mask-image: radial-gradient(ellipse at center, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
+      -webkit-mask-image: radial-gradient(ellipse at center, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
+      mask-size: 100% 100%;
+      mask-repeat: no-repeat;
+    }
+
+    .gif-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <h1>¡FELIZ DÍA DEL PADRE!</h1>
+  <p>Un padre es maestro, amigo y consejero todo en la misma persona.<br>
+  No le podemos pedir nada más, tan solo darle a cambio todo nuestro cariño.</p>
+
+  <!-- GIF con efecto "bordes suaves - 5 puntos" estilo Word -->
+  <div class="gif-container">
+    <img src="https://i.pinimg.com/originals/61/f6/72/61f672f64c65e8838d7acbaf3aad1762.gif" alt="Goku en la nube voladora" />
+  </div>
+
+  <!-- Dedicatoria -->
+  <div class="credit">Con mucho cariño ❤️</div>
+
+</body>
+</html>
