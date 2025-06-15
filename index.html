@@ -15,7 +15,7 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       color: #000;
       text-align: center;
-      padding-top: 150px; /* bajamos el texto */
+      padding-top: 150px;
       min-height: 100vh;
       position: relative;
       overflow: hidden;
@@ -49,14 +49,10 @@
     }
 
     .gif-container {
-      position: fixed;
-      bottom: 10px;
-      right: 130px; /* más hacia la izquierda */
-      width: 280px;  /* más grande */
+      margin: 40px auto 0;
+      width: 280px;
       height: 200px;
       overflow: hidden;
-      z-index: 9999;
-      pointer-events: none;
       mask-image: radial-gradient(ellipse at center, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
       -webkit-mask-image: radial-gradient(ellipse at center, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
       mask-size: 100% 100%;
@@ -75,7 +71,7 @@
   <p>Un padre es maestro, amigo y consejero todo en la misma persona.<br>
   No le podemos pedir nada más, tan solo darle a cambio todo nuestro cariño.</p>
 
-  <!-- GIF de Gokú con bordes suaves, más grande y más centrado -->
+  <!-- GIF centrado debajo del texto -->
   <div class="gif-container">
     <img src="https://i.pinimg.com/originals/61/f6/72/61f672f64c65e8838d7acbaf3aad1762.gif" alt="Goku en la nube voladora" />
   </div>
